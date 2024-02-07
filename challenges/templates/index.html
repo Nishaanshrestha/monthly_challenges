@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block body %}
 <ul>
+    {% comment %} months is new {% endcomment %}
     {% for month in months %}
-    <a href={%month_    %}>
-   <li>{{month}}<li>
-   </a>
+    {% comment %} from urls.py name=monthly_challenges, month to redirect {% endcomment %}
+        <a href="{% url 'month-challenge' month %}">
+    <li>{{month}}<li>
+    </a>
     {%endfor%}
 </ul>
-</body>
-</html>
+{% endblock body %}

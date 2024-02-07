@@ -18,6 +18,8 @@ challenges  ={
     }
 months=list(challenges.keys())
 def index(request):
+#   key value give for calling inside{}
+#   months is variable
   return render(request,'index.html',{
         'months':months})
 def months_challenges(request,month):
