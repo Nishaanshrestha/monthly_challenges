@@ -1,0 +1,82 @@
+{% comment %} PS C:\Users\shres\Desktop> mkdir mywebsite
+
+
+    Directory: C:\Users\shres\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/6/2024  12:11 PM                mywebsite
+
+
+PS C:\Users\shres\Desktop> cd mywebsite
+PS C:\Users\shres\Desktop\mywebsite> python-m virtualenv env
+python-m : The term 'python-m' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ python-m virtualenv env
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (python-m:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\shres\Desktop\mywebsite> python -m virtualenv env
+created virtual environment CPython3.12.1.final.0-64 in 24842ms
+  creator CPython3Windows(dest=C:\Users\shres\Desktop\mywebsite\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\shres\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.3.2
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+PS C:\Users\shres\Desktop\mywebsite> .\env\Scripts\activate
+(env) PS C:\Users\shres\Desktop\mywebsite> pip install django
+Collecting django
+  Using cached Django-5.0.1-py3-none-any.whl.metadata (4.2 kB)
+Collecting asgiref<4,>=3.7.0 (from django)
+  Using cached asgiref-3.7.2-py3-none-any.whl.metadata (9.2 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2023.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached Django-5.0.1-py3-none-any.whl (8.1 MB)
+Using cached asgiref-3.7.2-py3-none-any.whl (24 kB)
+Using cached tzdata-2023.4-py2.py3-none-any.whl (346 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-5.0.1 sqlparse-0.4.4 tzdata-2023.4
+
+[notice] A new release of pip is available: 23.3.2 -> 24.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(env) PS C:\Users\shres\Desktop\mywebsite> django-admin startproject monthly_challenges
+(env) PS C:\Users\shres\Desktop\mywebsite> ls
+
+
+    Directory: C:\Users\shres\Desktop\mywebsite
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/6/2024  12:14 PM                env
+d-----          2/6/2024  12:21 PM                monthly_challenges
+
+
+(env) PS C:\Users\shres\Desktop\mywebsite> cd monthly_challenges
+(env) PS C:\Users\shres\Desktop\mywebsite\monthly_challenges> ls
+
+
+    Directory: C:\Users\shres\Desktop\mywebsite\monthly_challenges
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/6/2024  12:21 PM                monthly_challenges
+-a----          2/6/2024  12:21 PM            696 manage.py
+
+
+(env) PS C:\Users\shres\Desktop\mywebsite\monthly_challenges> code.
+code. : The term 'code.' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ code.
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (code.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(env) PS C:\Users\shres\Desktop\mywebsite\monthly_challenges> code .
+(env) PS C:\Users\shres\Desktop\mywebsite\monthly_challenges> {% endcomment %}
